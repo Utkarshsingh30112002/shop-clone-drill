@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="shadow"></div>
@@ -41,38 +41,56 @@
       </div>
     </nav>
 
-    <div class="grid-container homepage">
-      <div class="box outerwear">
-        <div class="img-container">
-          <img src="./images/mens_outerwear.jpg" alt="" />
+    <div class="single-poduct main">
+        <div class="single-product image">
+            <img src="../images/single.jpg" alt="google-jacket">
         </div>
-        <div class="title">Men's Outerwear</div>
-        <div class="button shopnow"><a href="">SHOP NOW</a></div>
-      </div>
-      <div class="box outerwear">
-        <div class="img-container">
-          <img src="./images/ladies_outerwear.jpg" alt="" />
+        <div class="product-details">
+            <div class="title">Men's Tech Shell Full-Zip</div>
+            <div class="price h7">&dollar;50.20</div>
+            <div class="dropdown-container">
+            <hr>
+            <div class="size h7">
+                <label for="dropdown">Size:</label>
+                <select id="dropdown" name="options">
+                    <option value="option1">XS</option>
+                    <option value="option2">S</option>
+                    <option value="option3">M</option>
+                    <option value="option4">L</option>
+                    <option value="option4">XL</option>
+                </select>
+            </div>
+            <hr>
+            <div class="quantity h7">
+                <label for="dropdown">Quantity:</label>
+                <select id="dropdown" name="options">
+                    <option value="option1">1</option>
+                    <option value="option2">2</option>
+                    <option value="option3">3</option>
+                    <option value="option4">4</option>
+                    <option value="option4">5</option>
+                </select>
+            </div>
+            <hr>
+            </div>
+            <div class="description">
+               <div>Description</div> 
+                <div class="description-detail h7">
+                    A versatile full-zip that you can wear all day long and even to the gym. This technical shell features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media player.
+                </div>
+                <ul class="h7">
+                    Features:
+                    <li>100% polyester.</li>
+                    <li>Smooth, technical front with textured mesh back.</li>
+                    <li>Drawstring bottom for adjustable fit.</li>
+                    <li>Raglan sleeves.</li>
+                    <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                </ul>
+            </div>
         </div>
-        <div class="title">Ladie's Outerwear</div>
-        <div class="button shopnow"><a href="">SHOP NOW</a></div>
-      </div>
-      <div class="box tshirt1">
-        <div class="img-container">
-          <img src="./images/mens_tshirts.jpg" alt="" />
-        </div>
-        <div class="title">Men's Tshirt</div>
-        <div class="button shopnow"><a href="">SHOP NOW</a></div>
-      </div>
-      <div class="box tshirt2">
-        <div class="img-container">
-          <img src="./images/ladies_tshirts.jpg" alt="" />
-        </div>
-        <div class="box-title">Ladie's Tshirt</div>
-        <div class="shopnow-container">
-          <div class="button shopnow"><a href="">SHOP NOW</a></div>
-        </div>
-      </div>
+        
     </div>
+    <div for="add-to-cart"class="add-to-cart button">Add To Cart</div>
 
     <footer>
         <div class="info"><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by Polymer</a></div>
