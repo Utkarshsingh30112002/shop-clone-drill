@@ -98,7 +98,7 @@ footer{
   color: white;
   text-transform: uppercase;
 }
-.info > a{
+.info > a,.h7{
     font-size: 13px;
     color: rgb(134, 129, 129);
 }
@@ -147,4 +147,19 @@ footer{
     opacity: 1;
     pointer-events: auto;
     transition: 0.4s ease;
+}
+
+
+
+.main-grid{
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-template: repeat(8,1fr)/1fr 1fr !important;
+}
+.men.product-box .product-image{
+    padding: 5px 10px;
+}
+.men.header .h7{
+    margin: 4px;
 }
