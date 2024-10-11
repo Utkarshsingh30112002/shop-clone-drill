@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="shadow"></div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="hamburger-button button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <div class="main-title button">
+          <a href="/index.html">SHOP</a>
+        </div>
+        <div class="cart-button button">
+          <a href="./pages/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+            <li><a href="#mens outerwear">Men's Outerwear</a></li>
+            <li><a href="#ledies outerwear">Ladie's Outerwear</a></li>
+            <li><a href="#mens-tshirt">Men's Tshirt</a></li>
+            <li><a href="#womens-tshirt">Ladie's Tshirt</a></li> 
+        </ul>
+      </div>
+    </nav>
+
+    <div class="checkout-main flex-container">
+        <div class="account-info h2">Account Information</div>
+        <div class="input-container email h7">
+            <input type="text" id="email">
+            <label class="input-label" for="email">Email</label>
+        </div>
+        <div class="input-container">
+            <input type="text" id="Phone Number">
+            <label class="input-label"for="Phone Nmber">Phone Number</label>
+        </div>
+        <div class="shipping-address h2">Shipping Address</div>
+        <div class="input-container">
+            <input type="text" id="Address">
+            <label class="input-label"for="Address">Address</label>
+        </div>
+        <div class="input-container">
+            <label class="input-label"for="City">City</label>
+            <input type="text" id="City">
+        </div>
+        <div class="state-code-container">
+        <div class="input-container">
+            <input type="text" id="State/Provence">
+            <label class="input-label"for="State/Provence">State/Provence</label>
+        </div>
+        <div class="input-container">
+            <input type="text" id="Zip/Postal Code">
+            <label class="input-label"for="Zip/Postal Code">Zip-Postal Code</label>
+        </div>
+        </div>
+        <div class="account-info h2">Billing Address</div>
+        <div class="checkbox-container">
+            <div class="checkbox" id="billingAddress-checkbox">
+                <input id="billing-checkbox" type="checkbox">
+            </div>
+            <label class="h7" for="billingAddress-checkbox">Use diffrent billing address</label>
+        </div>
+        <div class="billing-address">
+        <div class="input-container">
+            <input type="text" id="Address">
+            <label class="input-label"for="Address">Address</label>
+        </div>
+        <div class="input-container">
+            <label class="input-label"for="City">City</label>
+            <input type="text" id="City">
+        </div>
+        <div class="state-code-container">
+        <div class="input-container">
+            <input type="text" id="State/Provence">
+            <label class="input-label"for="State/Provence">State/Provence</label>
+        </div>
+        <div class="input-container">
+            <input type="text" id="Zip/Postal Code">
+            <label class="input-label"for="Zip/Postal Code">Zip-Postal Code</label>
+        </div>
+        </div>
+        </div>
+        <div class="account-info h2">Payment Method</div>
+        <div class="input-container">
+            <input type="text" id="Cardholder-Name">
+            <label class="input-label"for="Cardholder-Name">Cardholder-Name</label>
+        </div>
+        <div class="input-container">
+            <input type="text" id="Card-Number">
+            <label class="input-label"for="Card-Number">Card Number</label>
+        </div>
+        <div>
+            <div class="expiry-h2">Expiry</div>
+            <div class="exp-cvv">
+                <div class="dropdown input-container">
+                    <label class="input-label bottom-line"for=""></label>
+                   <select name="month" id="month">
+                    <option value="Jan">Jan</option>
+                    <option value="Jan">Feb</option>
+                    <option value="Jan">Mar</option>
+                    <option value="Jan">Apr</option>
+                    <option value="Jan">May</option>
+                    <option value="Jan">Jun</option>
+                    <option value="Jan">Jul</option>
+                    <option value="Jan">Aug</option>
+                    <option value="Jan">Sep</option>
+                    <option value="Jan">Oct</option>
+                    <option value="Jan">Nov</option>
+                    <option value="Jan">Dec</option>
+                   </select>
+                </div>
+                 <div class="dropdown input-container">
+                    <label class="input-label bottom-line"for=""></label>
+                    <select name="year" id="year">
+                     <option value="Jan">2022</option>
+                     <option value="Jan">2023</option>
+                     <option value="Jan">2024</option>
+                     <option value="Jan">2025</option>
+                     <option value="Jan">2026</option>
+                     <option value="Jan">2027</option>
+                     <option value="Jan">2028</option>
+                     <option value="Jan">2029</option>
+                     <option value="Jan">2030</option>
+                     <option value="Jan">2031</option>
+                    </select>
+                 </div>
+                 <div class="input-container">
+                    <input type="text" id="cvv">
+                    <label class="input-label"for="cvv">CVV</label>
+                 </div>
+            </div>
+        </div>
+        <div class="order-summary">Order Summary</div>
+        <div class="order-summary-flex h4">
+            <div class="item1">Men's Tech Shell Full-Zip</div>
+            <div class="item-1-price">&dollar;22.15</div>
+        </div>
+        <div class="order-summary-flex h4">
+            <div class="item2">Men's Tech Shell Full-Zip</div>
+            <div class="item-2-price">&dollar;22.15</div>
+        </div>
+        <div class="order-summary-flex total h4">
+            <div class="item2">Total</div>
+            <div class="item-2-price">&dollar;44.30</div>
+        </div>
+
+        
+
+    </div>
+
+    <div for="add-to-cart"class="add-to-cart button">Place Order</div>
+
+    <footer>
+        <div class="info"><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by Polymer</a></div>
+        <div class="demo-only button">
+            <div class="demo-only-button">demo only</div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

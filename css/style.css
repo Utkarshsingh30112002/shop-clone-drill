@@ -270,3 +270,99 @@ select{
     gap:40px;
     justify-content: end;
 }
+/* checkout */
+
+.checkout-main.flex-container{
+    width:100%;
+    padding-left: 20px;
+    display:flex;
+    flex-direction: column;
+    align-content: start !important;
+    align-items: flex-start;
+}
+.checkout-main.flex-container input{
+    width: 100%;
+    text-align: start;
+    font-size: medium;
+}
+.input-container {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    display: inline-block;
+}
+input ,.bottom-line{
+    width: 100%;
+    padding: 10px 10px 8px; /* Add space for the underline */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* For smooth bottom border transition */
+}
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #000; /* Change bottom border on focus */
+}
+.input-label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #999;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    pointer-events: none; /* Prevents clicking on the label */
+}
+input:focus + .input-label {
+    top: -10px;
+    font-size: 16px;
+}
+.h2{
+    margin-top: 30px;
+}
+.state-code-container{
+    width:100%;
+    display:grid;
+    grid-template: auto/auto auto;
+    gap:5px;
+}
+.exp-cvv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:12px;
+}
+.expiry-h2{
+    text-align: start;
+    margin-top: 30px;
+}
+.bottom-line{
+    top:18px
+}
+.checkbox-container{
+    display: flex;
+    gap:30px;
+    margin-top:30px;
+}
+
+.billing-address{
+    display: none;
+}
+select{
+    border: none;
+    outline: none;
+}
+.order-summary{
+    margin-top: 20px;
+}
+.order-summary-flex{
+    margin:10px 0px ;
+    padding-right:10px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.order-summary-flex.total{
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: 400;
+}

@@ -14,4 +14,14 @@ document.addEventListener('DOMContentLoaded',()=>{
             shadow.classList.remove("active")
         }
     })
+    const checkbox = document.getElementById('billing-checkbox');
+        const billingAddress = document.querySelector('.billing-address');
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                billingAddress.style.display = 'block'; // Show billing address
+            } else {
+                billingAddress.style.display = 'none'; // Hide billing address
+            }
+        });
 })
