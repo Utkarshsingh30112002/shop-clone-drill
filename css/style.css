@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style:none;
+}
+.container{
+    margin:20px;
+    width:100vw;
+    display: grid;
+    height:auto;
+    width:auto;
+    grid-template:auto / 24px auto 24px;
+    z-index: 10;
+
+}
+.hamburger-button{
+    padding: 3px;
+    height: 24px;
+    width:24px;
+    background: none;
+    cursor:pointer;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-button .hamburger-line{
+    width: 20px;
+    height:2px;
+    background: #333; 
+}
+.main-title a{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+}
+
+.grid-container{
+    width:100vw;
+    display: grid;
+    grid-template: auto auto auto / 1fr 1fr;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.outerwear{
+    grid-column: 1 / 3;
+}
+.box img {
+    height: 240px;
+    width: 100%; /* Make the image fill the width of its container */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    margin:6px 0px
+}
+.button.shopnow{
+  margin: 10px 0px;
+  padding: 8px 44px;
+  display: inline-block;
+  border: 2px solid #000;
+  background-color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer{
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.demo-only-button{
+  box-sizing: border-box;
+  width: 120px;
+  padding: 6px;
+  margin: 8px auto 0;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+.info > a{
+    font-size: 13px;
+    color: rgb(134, 129, 129);
+}
+.info > a:hover{
+    text-decoration: underline;
+}
+
+.mobile-menu{
+    position: fixed;
+    top:0;
+    left:-600px;
+    
+    width:250px;
+    padding:30px 0;
+    height:100%;
+    z-index: 100000;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+    transition: left 0.3s ease-in-out;
+}
+
+.mobile-menu ul li{
+    text-align: left;
+    margin: 1px 20px 20px 20px;
+}
+.mobile-menu ul li a{
+    color: #756b6b;
+}
+.mobile-menu.active{
+    left:0;
+}
+
+.shadow{
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top:0;
+    right:0;
+    height: 100%;
+    width:100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadow.active{
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s ease;
+}
