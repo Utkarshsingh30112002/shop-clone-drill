@@ -24,4 +24,10 @@ document.addEventListener('DOMContentLoaded',()=>{
                 billingAddress.style.display = 'none'; // Hide billing address
             }
         });
+    const topbar=document.querySelector('.topbar-link');
+    topbar.addEventListener('click',()=>{
+        topbar.classList.add("active")
+    })
+
+
 })
