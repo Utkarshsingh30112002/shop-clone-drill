@@ -243,7 +243,14 @@ select{
     justify-content: space-between;
 }
 .container.cart .item{
+    position: relative;
     display: flex;
+}
+.x-button{
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
 }
 .container.cart .item .item-detail{
     display: flex;
@@ -389,6 +396,7 @@ select{
 .item-detail .item-title{
     display: none;
 }
+
 @media screen and (min-width:760px) {
     .hamburger-button{
         z-index: -1;
@@ -502,11 +510,21 @@ select{
         display: grid;
     }
     .main-checkout-container{
+        width:100%;
         display: grid;
         grid-template: 1fr / 1fr 1fr;
         padding-right:10px;
+        justify-content: center;
+        max-width: 900px;
+
     }
     .first-half .h2,.second-half .h2{
         text-align: start;
+    }
+    .men.header.checkout{
+        margin: 40px;
+    }
+    .main-checkout-container .order-summary{
+        margin-top: 30px;
     }
 }
