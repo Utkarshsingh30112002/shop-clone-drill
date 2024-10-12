@@ -151,7 +151,7 @@ footer{
     transition: 0.4s ease;
 }
 
-
+/* men-outerwear-page */
 
 .main-grid{
     height: 100%;
@@ -378,7 +378,7 @@ select{
 .box.outerwear-men{
     display: none;
 }
-.cart-total .checkout{
+.cart-total .checkout,.description .checkout{
     display: none;
     border:2px solid #000000;
     padding: 8px 44px;
@@ -421,7 +421,7 @@ select{
         display: none !important;
         pointer-events: none;
     }
-    .cart-total .checkout{
+    .cart-total .checkout,.description .checkout{
         display:block;
     }
     .container.cart .cart-total{
@@ -468,5 +468,22 @@ select{
         justify-content: space-evenly;
     }
     
+
+    /* single item*/
+    .single-poduct.main{
+        max-width: 1100px;
+        display: grid ;
+        grid-template-columns:1fr 1fr ;
+    }
+    .single-poduct.main img{
+        width: 30vmax;
+        height:30vmax
+
+    }
+    .description .checkout{
+        margin-top: 10px;
+        width:182px;
+        height: 37px;
+    }
 
 }
